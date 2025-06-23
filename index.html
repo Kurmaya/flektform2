@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Flekt</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="./assets/flekt_logo.avif" alt="">
+    </div>
+ 
+          <div class="prev hide"> <i class="arrow left"></i> </div>
+    <div class="next hide"> <i class="arrow right"></i> </div>
+    <div id="wrapper">
+    
+        <div class="question-holder holder-1" data-check="">
+   <div class="question" data-check="true">
+                <div class="dropdown">
+    <h2>Choose Branch:</h2>
+    <div class="options" data-check="true">
+<select name="Branch" class="brnch">
+    <option value="Assay Road">Assay Road</option>
+    <option value="HRBR">HRBR</option>
+    <option value="HSR">HSR</option>
+    <option value="J P Nagar">J P Nagar</option>
+    <option value="Jayanagar">Jayanagar</option>
+    <option value="Koramangala">Koramangala</option>
+    <option value="Sadashiv Nagar">Sadashiv Nagar</option>
+    <option value="Lavelle Road">Lavelle Road</option>
+    <option value="Indiranagar">Indiranagar</option>
+    <option value="Whitefield">Whitefield</option>
+    <option value="New Bel Road">New Bel Road</option>
+    <option value="Kanakpura">Kanakpura</option>
+    <option value="Bannerghatta	">Bannerghatta	</option>
+    <option value="R R Nagar">R R Nagar</option>
+  </select>
+    </div>
+  
+    </div>
+   </div>
+              <div class="question">
+                <h2>Stylist's Name</h2>
+                <div class="options">
+
+                
+                
+                <input name="Stylist's Name" type="text" required placeholder="Name" id="stylistname">
+            
+                </div>
+            </div>
+            <div class="question">
+                <h2>Client's Name</h2>
+                <div class="options">
+
+                
+                
+                <input name="Client's Name" type="text" required placeholder="Name" id="yourname">
+            
+                </div>
+            </div>
+        
+       <div class="question">
+           <h2>Contact Number</h2>
+         <div class="options" >
+            <input type="number" name="contact" required placeholder="Contact number" id="phNum" minlength="10">
+        </div>
+       </div>
+            <!-- gender -->
+            <div class="question" data-check="">
+                <h2>What is your gender?</h2>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="What is your gender?" id="" value="Male" class="gender"> Male</label>
+                        <label >
+        <input type="radio" name="What is your gender?" id="" value="Female" class="gender">Female </label>
+                </div>
+            </div>
+          
+            
+        </div>
+        <div class="question-holder hide holder-2" data-check="">
+              <!-- ECM questions -->
+            <div class="question ecm-ha" data-check="">
+                <h2>ECM tool scan result for hair:</h2>
+                <div class="options" data-check="">
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="" value="Dryness" > 
+                        Dryness
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="" value="Breakage / Split Ends" > 
+                        Breakage / Split Ends
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="" value="Environment Damage (Like sun bleach)"> 
+                        Environment Damage (Like sun bleach)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="" value="Mechanical Damage (Ironing, tonging)"> 
+                        Mechanical Damage (Ironing, tonging)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="" value="Chemical Damaged Hair (Permanent Smoothening, Over bleached hair)" > 
+                        Chemical Damaged Hair (Permanent Smoothening, Over bleached hair)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="" value="Fine/ Lack of volume" > 
+                        Fine/ Lack of volume
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="" value="Frizzy/ Unmanageable" > 
+                        Frizzy/ Unmanageable
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="" value="Dull/ Lack of Shine" > 
+                        Dull/ Lack of Shine
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="" value="Colored Hair" > 
+                        Colored Hair
+                    </label>
+                </div>
+            </div>
+            <div class="question ecm-sc" data-check="">
+                <h2>ECM tool scan result for scalp: </h2>
+                <div class="options" data-check="">
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your scalp" id="" value="Sensitive (Dryness/ Weakness / Rashes)" > 
+                        Sensitive (Dryness/ Weakness / Rashes)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your scalp" id="" value="Hair Fall" > 
+                        Hair Fall
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your scalp" id="" value="Oily" > 
+                        Oily
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your scalp" id="" value="Dandruff" > 
+                        Dandruff
+                    </label>
+                </div>
+            </div>
+            <div class="question semi">
+                <h2>Have you done semi permanent smoothening in the past 2-3 months?</h2>
+                <div class="options break" data-check="" data-name="">
+                    <label>
+                        <input type="radio" name="Have you done semi permanent smoothening in the past 2-3 months?" id="semi" value="yes"> 
+                        yes
+                    </label>
+                    <label >
+                        <input type="radio" name="Have you done semi permanent smoothening in the past 2-3 months?" id="" value="no"> 
+                        no
+                    </label>
+                </div>
+            </div>
+            
+        </div>
+        <div class="holder-semi hide">
+
+    <div class="question" data-check="">
+                <h2>Is your concern related to:</h2>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="Is your concern related to:" class="concern-select" value="Hair">
+                        Hair
+                    </label>
+                    <label>
+                        <input type="radio" name="Is your concern related to:" class="concern-select" value="Scalp">
+                        Scalp
+                    </label>
+                    <label>
+                        <input type="radio" name="Is your concern related to:" class="concern-select" value="Both(Hair & Scalp)">
+                        Both(Hair & Scalp)
+                    </label>
+                    
+                </div>
+               
+            </div>
+            <div class="question">
+                <h2>What do you dislike (concern) about your </h2>
+                <h3 class="scalp-opts hide">Scalp</h3>
+                <div class="options scalp-opts hide">
+                     <label>
+                            <input type="checkbox" name="What do you dislike (Concern) about your scalp" id="hairFall" value="Hair Fall" class="scalpCa" 
+                            data-prod="SP BALANCE " 
+                            data-img='["./assets/images/compressed/sp balance lotion.jpg","./assets/images/compressed/sp balance elix.jpg","./assets/images/compressed/3tenx cream.jpg","./assets/images/compressed/3tenx serum.jpg","./assets/images/compressed/3tenx hydrify.jpg"]'
+                            data-price='["Rs.2400/-","Rs.5650/-","Rs.1199/-","Rs.1899/-","Rs.1800/-"]'
+                        data-name='["SP Balance Lotion","SP Balance Energy Serum","3tenx Hydrating Frizz Fixer Cream","3tenx Nourishing Hair Serum","3tenx Hydrify Gloss Mist"]'
+                        data-use='["Hair Fall","Hair Fall"]'> 
+                            Hair Fall
+                        </label>
+                         <label>
+                            <input type="checkbox" name="What do you dislike (Concern) about your scalp" id="Dandruff" value="Dandruff" class="scalpCa" 
+                            data-prod="SP PURIFY " 
+                            data-img='["./assets/images/compressed/sp purify peel.jpg","./assets/images/compressed/sp purify lotion.jpg","./assets/images/compressed/3tenx cream.jpg","./assets/images/compressed/3tenx serum.jpg","./assets/images/compressed/3tenx hydrify.jpg"]'
+                            data-price='["Rs.2900/-","Rs.2400/-","Rs.1199/-","Rs.1899/-","Rs.1800/-"]'
+                        data-name='["SP Purify Shampeeling - for Stubborn Dandruff","SP Purify Lotion - for Mild Dandruff","3tenx Hydrating Frizz Fixer Cream","3tenx Nourishing Hair Serum","3tenx Hydrify Gloss Mist"]'
+                        data-use='["Dandruff","Dandruff"]'> 
+                            Dandruff
+                        </label>
+                </div>
+                <h3 class="hair-opts hide">Hair</h3>
+                  <div class="options hair-opts hide">
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="Dryness" value="Dryness" class="hairCa" 
+                        data-prod="3tenx HYDRA REVIVE" 
+                        data-img='["./assets/images/compressed/3tenx hydra revive cond.jpg","./assets/images/compressed/3tenx hydra revive shampoo.jpg","./assets/images/compressed/3tenx hydra revive hair mask.jpg","./assets/images/compressed/3tenx cream.jpg","./assets/images/compressed/3tenx serum.jpg","./assets/images/compressed/3tenx hydrify.jpg"]'
+                        data-price='["Rs.1499/-","Rs.1499/-","Rs.1799/-","Rs.1199/-","Rs.1899/-","Rs.1800/-"]'
+                        data-name='["3tenx Hydra Conditioner", "3tenx Hydra Shampoo","3tenx Hydra Hair Mask","3tenx Hydrating Frizz Fixer Cream","3tenx Nourishing Hair Serum","3tenx Hydrify Gloss Mist"]'
+                        data-use='["Dryness","Dryness","Dryness"]' /> 
+                        Dryness
+                    </label>
+             
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="Damage" value="Damaged Hair" class="hairCa"
+                         data-prod="3tenx ULTIMATE REVITALIZE" 
+                         data-img='["./assets/images/compressed/3tenx ulti rev cond.jpg","./assets/images/compressed/3tenx ulti rev hair mask.jpg","./assets/images/compressed/3tenx ulti rev shampoo.jpg","./assets/images/compressed/3tenx cream.jpg","./assets/images/compressed/3tenx serum.jpg","./assets/images/compressed/3tenx hydrify.jpg"]'
+                         data-price='["Rs.1799/-","Rs.1999/-","Rs.1799/-","Rs.1199/-","Rs.1899/-","Rs.1800/-"]'
+                         data-name='["3tenx Ultimate Revive Conditioner","3tenx Ultimate Revive Hair Mask","3tenx Ultimate Revive Shampoo","3tenx Hydrating Frizz Fixer Cream","3tenx Nourishing Hair Serum","3tenx Hydrify Gloss Mist"]'
+                         data-use='["Damaged Hair","Damaged Hair","Damaged Hair"]'> 
+                        Damaged Hair
+                    </label>
+                
+                   
+                
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="Frizzy" value="Frizzy/ Unmanageable" class="hairCa" 
+                        data-prod="3tenx HYDRA REVIVE" 
+                        data-img='["./assets/images/compressed/3tenx hydra revive cond.jpg","./assets/images/compressed/3tenx hydra revive shampoo.jpg","./assets/images/compressed/3tenx hydra revive hair mask.jpg","./assets/images/compressed/3tenx cream.jpg","./assets/images/compressed/3tenx serum.jpg","./assets/images/compressed/3tenx hydrify.jpg"]'
+                        data-price='["Rs.1499/-","Rs.1499/-","Rs.1799/-","Rs.1199/-","Rs.1899/-","Rs.1800/-"]'
+                        data-name='["3tenx Hydra Conditioner", "3tenx Hydra Shampoo","3tenx Hydra Hair Mask","3tenx Hydrating Frizz Fixer Cream","3tenx Nourishing Hair Serum","3tenx Hydrify Gloss Mist"]' 
+                        data-use='["Frizzy/ Unmanageable Hair","Frizzy/ Unmanageable Hair","Frizzy/ Unmanageable Hair"]'/> 
+                        Frizzy/ Unmanageable
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="Dull" value="Dull/ Lack of Shine" class="hairCa" 
+                       data-prod="3tenx HYDRA REVIVE" 
+                        data-img='["./assets/images/compressed/3tenx hydra revive cond.jpg","./assets/images/compressed/3tenx hydra revive shampoo.jpg","./assets/images/compressed/3tenx hydra revive hair mask.jpg","./assets/images/compressed/3tenx cream.jpg","./assets/images/compressed/3tenx serum.jpg","./assets/images/compressed/3tenx hydrify.jpg"]'
+                        data-price='["Rs.1499/-","Rs.1499/-","Rs.1799/-","Rs.1199/-","Rs.1899/-","Rs.1800/-"]'
+                        data-name='["3tenx Hydra Conditioner", "3tenx Hydra Shampoo","3tenx Hydra Hair Mask","3tenx Hydrating Frizz Fixer Cream","3tenx Nourishing Hair Serum","3tenx Hydrify Gloss Mist"]' 
+                        data-use='["Dull/ Lack of Shine","Dull/ Lack of Shine","Dull/ Lack of Shine"]'/> 
+                        Dull/ Lack of Shine
+                    </label>
+                  
+                </div>
+            </div>
+            <button class="semi-flow">Submit</button>
+
+        </div>
+        <div class="question-holder hide">
+            <div class="question" data-check="">
+                <h2>Is your concern related to:</h2>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="Is your concern related to:" class="concern-select" value="Hair">
+                        Hair
+                    </label>
+                    <label>
+                        <input type="radio" name="Is your concern related to:" class="concern-select" value="Scalp">
+                        Scalp
+                    </label>
+                    <label>
+                        <input type="radio" name="Is your concern related to:" class="concern-select" value="Both(Hair & Scalp)">
+                        Both(Hair & Scalp)
+                    </label>
+                    
+                </div>
+               
+            </div>
+             <div class="question" data-check="">
+                    <h2>What homecare products are you currently using</h2>
+                    <div class="options">
+                        <input type="text" class="homecare">
+                    </div>
+                </div>
+                <div class="question" data-check="">
+                    <h2>Do you heatstyle?</h2>
+                    <div class="options heat" data-check="">
+                    <label>
+                        <input class="heat-yes" type="radio" name="Do you heatstyle?" id="" value="yes"> 
+                        yes
+                    </label>
+                    <label >
+                        <input type="radio" class="heat-no" name="Do you heatstyle?" id="" value="no" >  
+                        no
+                    </label>
+                    <div class="hold hide">
+                        <h2>How frequently do you heatstyle your hair?</h2>
+                        <div class="dropdown">
+    <!-- <h2>Choose Branch:</h2> -->
+    <div class="options" data-check="">
+<select class="hFrq" name="Heatstyle Frequency">
+    <option value="Once a Week">Once a Week</option>
+    <option value="Twice a Week">Twice a Week</option>
+    <option value="More than Twice a Week">More than Twice a Week</option>
+  </select>
+    </div>
+  
+    </div>
+                    </div>
+                    
+                    
+                </div>
+                </div>
+                <div class="question" data-check="">
+                    <h2>Do you do chemical treatments ?</h2>
+                        <div class="options chem" data-check="">
+                    <label>
+                        <input class="chem-yes" type="radio" name="Do you do chemical treatments ?" id="" value="yes"> 
+                        yes
+                    </label>
+                    <label >
+                        <input type="radio" class="chem-no" name="Do you do chemical treatments ?" id="" value="no" >  
+                        no
+                    </label>
+
+                    <div class="hold hide"  style="margin-top:10px; margin-right: 10%;">
+                        <h2>What are these chemical treatments?</h2>
+                        <input type="text" name="What are these chemical treatments?" id="chemText">
+                    </div>
+                    
+                    
+                </div>
+                 
+                </div>
+        </div>
+        <div class="question-holder hide holder-3" data-check="">
+               
+            <div class="question" data-check="" id="spa">
+                <h2>Are you doing a Hair Spa for the first time?</h2>
+                <div class="options" data-check="">
+                    <label>
+                        <input type="radio" name="Are you doing a Hair Spa for the first time?" id="" value="yes"> 
+                        yes
+                    </label>
+                    <label >
+                        <input type="radio" name="Are you doing a Hair Spa for the first time?" id="" value="no"> 
+                        no
+                    </label>
+                </div>
+                
+            </div>
+            <div class="question hair-opts" data-check="" id="wash">
+                <h2>When did you do your last hair wash?</h2>
+           <div class="options">
+            <label >
+                <input type="radio" name="When did you do your last hair wash?" id="" value="Less than 2 days">
+                Less than 2 days ago
+            </label>
+            <label >
+                <input type="radio" name="When did you do your last hair wash?" id="" value="Less than a week ago">
+                Less than a week ago
+            </label>
+           </div>
+            </div>
+            <div class="question hair-opts" data-check="" id="wash-freq">
+                <h2>How frequently do you wash your hair?</h2>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="How frequently do you wash your hair?" id="" value="Twice a week">
+                        Twice a week
+                    </label>
+                    <label>
+                        <input type="radio" name="How frequently do you wash your hair?" id="" value="More than Twice a Week">
+                        More than Twice a Week
+                    </label>
+                </div>
+                
+            </div>
+           
+        </div>
+        <div class="question-holder hide holder-4" data-check="">
+          
+            <div class="question">
+                <h2>What do you like about your</h2>
+                
+                    <h3 class="hair-opts">HAIR</h3><br>
+                <div class="options hair-opts" data-check="">
+                    <label>
+                        <input value="Length" type="checkbox" name="What do you like about your hair " id="" class="hairLike"> 
+                        Length
+                    </label>
+                    <label >
+                        <input value="Volume" type="checkbox" name="What do you like about your hair " id="" class="hairLike"> 
+                        Volume
+                    </label>
+                    <label >
+                        <input value="Thickness" type="checkbox" name="What do you like about your hair " id="" class="hairLike"> 
+                        Thickness
+                    </label>
+                    <label >
+                        <input value="Smoothness" type="checkbox" name="What do you like about your hair " id="" class="hairLike"> 
+                        Smoothness
+                    </label>
+                    <label >
+                        <input value="Curls" type="checkbox" name="What do you like about your hair " id="" class="hairLike"> 
+                        Curls
+                    </label>
+                    <label >
+                        <input value="Movement" type="checkbox" name="What do you like about your hair " id="" class="hairLike"> 
+                        Movement
+                    </label>
+                    <label >
+                        <input value="Color" type="checkbox" name="What do you like about your hair " id="" class="hairLike"> 
+                        Color
+                    </label>
+                    <label >
+                        <input value="Shine" type="checkbox" name="What do you like about your hair " id="" class="hairLike"> 
+                        Shine
+                    </label>
+                    <label >
+                        <input value="Easy to Style" type="checkbox" name="What do you like about your hair " id="" class="hairLike"> 
+                        Easy to style
+                    </label>
+                </div>
+                
+            <h3 class="scalp-opts">SCALP</h3>
+            <div class="options scalp-opts" data-check="">
+                <label >
+                    <input value="Normal" type="checkbox" name="What do you like about your scalp " id="" class="scalpLike"> 
+                    Normal
+                </label>
+                <label >
+                    <input value="Balanced" type="checkbox" name="What do you like about your scalp " id="" class="scalpLike"> 
+                    Balanced
+                </label>
+                <label >
+                    <input value="Calm and Free of Irritation" type="checkbox" name="What do you like about your scalp " id="" class="scalpLike"> 
+                    Calm & Free of Irritation
+                </label>
+                <label >
+                    <input value="Roots feel Healthy and strong" type="checkbox" name="What do you like about your scalp " id="" class="scalpLike"> 
+                    Roots feel Healthy & strong
+                </label>
+            </div>
+           
+            
+            </div>
+           
+        </div>
+      
+       
+        <div class="question-holder hide holder-5">
+            <div class="question">
+                <h2>What do you dislike (Concern) about your -</h2>
+                <h3 class="hair-opts">HAIR</h3>
+                <div class="options hair-opts ">
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="dryness" value="Dryness" class="hairCa" 
+                        data-prod="SP HYDRATE Conditioner , 3tenx HYDRA REVIVE , SB HYDRE " 
+                        data-img='["./assets/images/compressed/sp hydrate cond.jpg","./assets/images/compressed/sp hydrate mask.jpg","./assets/images/compressed/sp hydrate shampoo.jpg","./assets/images/compressed/sp hydrate spray.jpg","./assets/images/compressed/3tenx hydra revive cond.jpg","./assets/images/compressed/3tenx hydra revive shampoo.jpg","./assets/images/compressed/3tenx hydra revive hair mask.jpg","./assets/images/compressed/sb hydre cond.jpg","./assets/images/compressed/sb hydre shampoo.jpg","./assets/images/compressed/sp LUXE.jpg","./assets/images/compressed/sp luxe mask.jpg","./assets/images/compressed/sp luxe shampoo.jpg","./assets/images/compressed/sp luxe cond.jpg","./assets/images/compressed/sb dark oil.jpg"]'
+                        data-price='["Rs.2500/-","Rs.2900/-","Rs.2250/-","Rs.2300/-","Rs.1499/-","Rs.1499/-","Rs.1799/-","Rs.2450/-","Rs.1950/-","Rs.3500/-","Rs.3150/-","Rs.2250/-","Rs.2500/-","Rs.3100/-"]'
+                        data-name='["SP Hydrate Conditioner", "SP Hydrate Mask","SP Hydrate Shampoo","SP Hydrate Spray","3tenx Hydra Conditioner", "3tenx Hydra Shampoo","3tenx Hydra Hair Mask", "SB Hydre Condtioner","SB Hydre Shampoo","SP Keratin Luxe Elixir", "SP Luxe Mask","SP Luxe Shampoo", "SP Luxe Conditioner","SB Dark Oil"]' 
+                        data-use='["For Dry Hair","For Dry Hair","For Dry Hair","For Dry Hair","For Dry Hair","For Dry Hair","For Dry Hair","For Dry Hair","For Dry Hair","For Dry Hair","For Dry Hair","For Dry Hair","For Dry Hair"]'
+                    /> 
+                        
+                        
+                        Dryness
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="breakage" value="Breakage / Split Ends" class="hairCa" 
+                        data-prod="SP REPAIR , Olaplex , 3tenx ULTIMATE REVITALIZE , SB PENETRAITT " 
+                        data-img='["./assets/images/compressed/sp liquid hair.jpg","./assets/images/compressed/sp repair shampoo.jpg","./assets/images/compressed/sp repair cond.jpg","./assets/images/compressed/sp repair mask.jpg","./assets/images/compressed/olaplex-0.jpg","./assets/images/compressed/olaplex-3.jpg","./assets/images/compressed/olaplex-4.jpg","./assets/images/compressed/olaplex-7.jpg","./assets/images/compressed/olaplex-8.jpg","./assets/images/compressed/olaplex-9.jpg","./assets/images/compressed/3tenx ulti rev cond.jpg","./assets/images/compressed/3tenx ulti rev hair mask.jpg","./assets/images/compressed/3tenx ulti rev shampoo.jpg","./assets/images/compressed/sb penetraitt cond.avif","./assets/images/compressed/sb penetraitt shampoo.webp","./assets/images/compressed/sb penetraitt.jpg","./assets/images/compressed/sp LUXE.jpg","./assets/images/compressed/sp luxe mask.jpg","./assets/images/compressed/sp luxe shampoo.jpg","./assets/images/compressed/sp luxe cond.jpg","./assets/images/compressed/sb dark oil.jpg"]'
+                        data-price='["Rs.5500/-","Rs.2250/-","Rs.2500/-","Rs.2900/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.1799/-","Rs.1799/-","Rs.1999/-","Rs.2450/-","Rs.1950/-","Rs.2150/-","Rs.3500/-","Rs.3150/-","Rs.2250/-","Rs.2500/-","Rs.3100/-"]'
+                        data-name='["SP Liquid Hair","SP Repair Shampoo" , "SP Repair Conditioner","SP Repair Mask", "Olaplex No.0","Olaplex No.3","Olaplex No.4","Olaplex No.7","Olaplex No.8","Olaplex No.9","3tenx Ultimate Revive Conditioner","3tenx Ultimate Revive Hair Mask","3tenx Ultimate Revive Shampoo","SB Penetraitt Conditioner","SB Penetraitt Shampoo","SB Penetraitt Masque","SP Keratin Luxe Elixir", "SP Luxe Mask","SP Luxe Shampoo", "SP Luxe Conditioner","SB Dark Oil"]'
+                        data-use='["For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends","For Breakage / Split Ends"]'
+                        > 
+
+                        Breakage / Split Ends
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="envdamage" value="Environment Damage (Like sun bleach)" class="hairCa"
+                         data-prod="SP REPAIR , Olaplex , 3tenx ULTIMATE REVITALIZE , SB PENETRAITT " 
+                        data-img='["./assets/images/compressed/sp liquid hair.jpg","./assets/images/compressed/sp repair shampoo.jpg","./assets/images/compressed/sp repair cond.jpg","./assets/images/compressed/sp repair mask.jpg","./assets/images/compressed/olaplex-0.jpg","./assets/images/compressed/olaplex-3.jpg","./assets/images/compressed/olaplex-4.jpg","./assets/images/compressed/olaplex-7.jpg","./assets/images/compressed/olaplex-8.jpg","./assets/images/compressed/olaplex-9.jpg","./assets/images/compressed/3tenx ulti rev cond.jpg","./assets/images/compressed/3tenx ulti rev hair mask.jpg","./assets/images/compressed/3tenx ulti rev shampoo.jpg","./assets/images/compressed/sb penetraitt cond.avif","./assets/images/compressed/sb penetraitt shampoo.webp","./assets/images/compressed/sb penetraitt.jpg","./assets/images/compressed/sp LUXE.jpg","./assets/images/compressed/sp luxe mask.jpg","./assets/images/compressed/sp luxe shampoo.jpg","./assets/images/compressed/sp luxe cond.jpg","./assets/images/compressed/sb dark oil.jpg"]'
+                        data-price='["Rs.5500/-","Rs.2250/-","Rs.2500/-","Rs.2900/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.1799/-","Rs.1799/-","Rs.1999/-","Rs.2450/-","Rs.1950/-","Rs.2150/-","Rs.3500/-","Rs.3150/-","Rs.2250/-","Rs.2500/-","Rs.3100/-"]'
+                        data-name='["SP Liquid Hair","SP Repair Shampoo" , "SP Repair Conditioner","SP Repair Mask", "Olaplex No.0","Olaplex No.3","Olaplex No.4","Olaplex No.7","Olaplex No.8","Olaplex No.9","3tenx Ultimate Revive Conditioner","3tenx Ultimate Revive Hair Mask","3tenx Ultimate Revive Shampoo","SB Penetraitt Conditioner","SB Penetraitt Shampoo","SB Penetraitt Masque","SP Keratin Luxe Elixir", "SP Luxe Mask","SP Luxe Shampoo", "SP Luxe Conditioner","SB Dark Oil"]'
+                         data-use='["Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)","Environment Damage (Like sun bleach)"]'
+                        > 
+                        Environment Damage (Like sun bleach)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="mechdamage" value="Mechanical Damage (Ironing, tonging)" class="hairCa" 
+                        data-prod="SP REPAIR , Olaplex , 3tenx ULTIMATE REVITALIZE , SB PENETRAITT " 
+                        data-img='["./assets/images/compressed/sp liquid hair.jpg","./assets/images/compressed/sp repair shampoo.jpg","./assets/images/compressed/sp repair cond.jpg","./assets/images/compressed/sp repair mask.jpg","./assets/images/compressed/olaplex-0.jpg","./assets/images/compressed/olaplex-3.jpg","./assets/images/compressed/olaplex-4.jpg","./assets/images/compressed/olaplex-7.jpg","./assets/images/compressed/olaplex-8.jpg","./assets/images/compressed/olaplex-9.jpg","./assets/images/compressed/3tenx ulti rev cond.jpg","./assets/images/compressed/3tenx ulti rev hair mask.jpg","./assets/images/compressed/3tenx ulti rev shampoo.jpg","./assets/images/compressed/sb penetraitt cond.avif","./assets/images/compressed/sb penetraitt shampoo.webp","./assets/images/compressed/sb penetraitt.jpg","./assets/images/compressed/sp LUXE.jpg","./assets/images/compressed/sp luxe mask.jpg","./assets/images/compressed/sp luxe shampoo.jpg","./assets/images/compressed/sp luxe cond.jpg","./assets/images/compressed/sb dark oil.jpg"]'
+                        data-price='["Rs.5500/-","Rs.2250/-","Rs.2500/-","Rs.2900/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.1799/-","Rs.1799/-","Rs.1999/-","Rs.2450/-","Rs.1950/-","Rs.2150/-","Rs.3500/-","Rs.3150/-","Rs.2250/-","Rs.2500/-","Rs.3100/-"]'
+                        data-name='["SP Liquid Hair","SP Repair Shampoo" , "SP Repair Conditioner","SP Repair Mask", "Olaplex No.0","Olaplex No.3","Olaplex No.4","Olaplex No.7","Olaplex No.8","Olaplex No.9","3tenx Ultimate Revive Conditioner","3tenx Ultimate Revive Hair Mask","3tenx Ultimate Revive Shampoo","SB Penetraitt Conditioner","SB Penetraitt Shampoo","SB Penetraitt Masque","SP Keratin Luxe Elixir", "SP Luxe Mask","SP Luxe Shampoo", "SP Luxe Conditioner","SB Dark Oil"]'
+                        data-use='["Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)","Mechanical Damage (Ironing, tonging)"]'
+                        >
+                        Mechanical Damage (Ironing, tonging)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="chemdamage" value="Chemical Damaged Hair (Permanent Smoothening, Over bleached hair)" class="hairCa" 
+                        data-prod="SP REPAIR , Olaplex , 3tenx ULTIMATE REVITALIZE , SB PENETRAITT " 
+                       data-img='["./assets/images/compressed/sp liquid hair.jpg","./assets/images/compressed/sp repair shampoo.jpg","./assets/images/compressed/sp repair cond.jpg","./assets/images/compressed/sp repair mask.jpg","./assets/images/compressed/olaplex-0.jpg","./assets/images/compressed/olaplex-3.jpg","./assets/images/compressed/olaplex-4.jpg","./assets/images/compressed/olaplex-7.jpg","./assets/images/compressed/olaplex-8.jpg","./assets/images/compressed/olaplex-9.jpg","./assets/images/compressed/3tenx ulti rev cond.jpg","./assets/images/compressed/3tenx ulti rev hair mask.jpg","./assets/images/compressed/3tenx ulti rev shampoo.jpg","./assets/images/compressed/sb penetraitt cond.avif","./assets/images/compressed/sb penetraitt shampoo.webp","./assets/images/compressed/sb penetraitt.jpg","./assets/images/compressed/sp LUXE.jpg","./assets/images/compressed/sp luxe mask.jpg","./assets/images/compressed/sp luxe shampoo.jpg","./assets/images/compressed/sp luxe cond.jpg","./assets/images/compressed/sb dark oil.jpg"]'
+                        data-price='["Rs.5500/-","Rs.2250/-","Rs.2500/-","Rs.2900/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.2950/-","Rs.1799/-","Rs.1799/-","Rs.1999/-","Rs.2450/-","Rs.1950/-","Rs.2150/-","Rs.3500/-","Rs.3150/-","Rs.2250/-","Rs.2500/-","Rs.3100/-"]'
+                        data-name='["SP Liquid Hair","SP Repair Shampoo" , "SP Repair Conditioner","SP Repair Mask", "Olaplex No.0","Olaplex No.3","Olaplex No.4","Olaplex No.7","Olaplex No.8","Olaplex No.9","3tenx Ultimate Revive Conditioner","3tenx Ultimate Revive Hair Mask","3tenx Ultimate Revive Shampoo","SB Penetraitt Conditioner","SB Penetraitt Shampoo","SB Penetraitt Masque","SP Keratin Luxe Elixir", "SP Luxe Mask","SP Luxe Shampoo", "SP Luxe Conditioner","SB Dark Oil"]'
+                        data-use='["Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair","Chemical Damaged Hair"]'
+                         > 
+                        Chemical Damaged Hair (Permanent Smoothening, Over bleached hair)
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="limp" value="Fine/ Lack of volume" class="hairCa" 
+                        data-prod="SP Volumize ,SB VOLUPT " 
+                        data-img='["./assets/images/compressed/sb volupt shampoo.jpg","./assets/images/compressed/sb volupt cond.jpg","./assets/images/compressed/sb volupt spray.jpg","./assets/images/compressed/sp LUXE.jpg"]'
+                        data-price='["Rs.2000/-","Rs.2450/-","Rs.2100/-","Rs.3500/-"]'
+                        data-name='["SB Volupt Shampoo","SB Volupt Conditioner","SB Volupt Spray","SP Keratin Luxe Elixir"]'
+                        data-use='["Fine/ Lack of volume","Fine/ Lack of volume","Fine/ Lack of volume","Fine/ Lack of volume","Fine/ Lack of volume","Fine/ Lack of volume"]'
+                        > 
+                        Fine/ Lack of volume
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="frizzy" value="Frizzy/ Unmanageable" class="hairCa" 
+                        data-prods="SP SMOOTHEN , 3tenx HYDRA REVIVE , SB PENETRAITT , FMC Protein powered deep /  Moisture Melt Deep " 
+                        data-img='["./assets/images/compressed/sp smoothen shampoo.jpg","./assets/images/compressed/sp smoothen cond.jpg","./assets/images/compressed/sp smoothen mask.jpg","./assets/images/compressed/3tenx hydra revive cond.jpg","./assets/images/compressed/3tenx hydra revive shampoo.jpg","./assets/images/compressed/3tenx hydra revive hair mask.jpg","./assets/images/compressed/sb penetraitt cond.avif","./assets/images/compressed/sb penetraitt shampoo.webp","./assets/images/compressed/sb penetraitt.jpg","./assets/images/compressed/sp LUXE.jpg","./assets/images/compressed/sp luxe mask.jpg","./assets/images/compressed/sp luxe shampoo.jpg","./assets/images/compressed/sp luxe cond.jpg","./assets/images/compressed/sb dark oil.jpg"]'
+                        data-price='["Rs.2250/-","Rs.2600/-","Rs.2900/-","Rs.1499/-","Rs.1499/-","Rs.1799/-","Rs.2450/-","Rs.1950/-","Rs.2150/-","Rs.3500/-","Rs.3150/-","Rs.2250/-","Rs.2500/-","Rs.3100/-"]'
+                        data-name='["SP Smoothen Shampoo","SP Smoothen Conditioner","SP Smoothen Mask","3tenx Hydra Revive Conditioner","3tenx Hydra Revive Shampoo","3tenx Hydra Revive Hair Mask","SB Penetraitt Conditioner","SB Penetraitt Shampoo","SB Penetraitt Masque","SP Keratin Luxe Elixir", "SP Luxe Mask","SP Luxe Shampoo", "SP Luxe Conditioner","SB Dark Oil"]'
+                        data-use='["Frizzy/ Unmanageable","Frizzy/ Unmanageable","Frizzy/ Unmanageable","Frizzy/ Unmanageable","Frizzy/ Unmanageable","Frizzy/ Unmanageable","Frizzy/ Unmanageable","Frizzy/ Unmanageable","Frizzy/ Unmanageable","Frizzy/ Unmanageable","Frizzy/ Unmanageable"]'
+                        > 
+                        Frizzy/ Unmanageable
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="dull" value="Dull/ Lack of Shine" class="hairCa" 
+                        data-prod="SP KERATIN LUXE , 3tenx HYDRA REVIVE " 
+                        data-img='["./assets/images/compressed/sp LUXE.jpg","./assets/images/compressed/sp luxe mask.jpg","./assets/images/compressed/sp luxe shampoo.jpg","./assets/images/compressed/sp luxe cond.jpg","./assets/images/compressed/3tenx hydrify.jpg","./assets/images/compressed/3tenx hydra revive cond.jpg","./assets/images/compressed/3tenx hydra revive shampoo.jpg","./assets/images/compressed/3tenx hydra revive hair mask.jpg","./assets/images/compressed/sb dark oil.jpg"]'
+                        data-price='["Rs.3500/-","Rs.3150/-","Rs.2250/-","Rs.2500/-","Rs.1800","Rs.1499/-","Rs.1499/-","Rs.1799/-","Rs.3100/-"]'
+                        data-name='["SP Keratin Luxe Elixir", "SP Luxe Mask","SP Luxe Shampoo", "SP Luxe Conditioner","3tenx Hydrify Gloss Mist","3tenx Hydra Revive Conditioner","3tenx Hydra Revive Shampoo","3tenx Hydra Revive Hair Mask","SB Dark Oil"]'
+                        data-use='["Dull/ Lack of Shine","Dull/ Lack of Shine""Dull/ Lack of Shine""Dull/ Lack of Shine""Dull/ Lack of Shine""Dull/ Lack of Shine""Dull/ Lack of Shine"]'
+                        > 
+                        Dull/ Lack of Shine
+                    </label>
+                    <label>
+                        <input type="checkbox" name="What do you dislike (Concern) about your hair" id="colored" value="Colored Hair" class="hairCa" 
+                        data-prod="SP COLOR SAVE " 
+                        data-img='["./assets/images/compressed/sp color save shampoo.jpg","./assets/images/compressed/sp color save cond.jpg","./assets/images/compressed/sp color save mask.jpg","./assets/images/compressed/sp LUXE.jpg","./assets/images/compressed/sp luxe mask.jpg","./assets/images/compressed/sp luxe shampoo.jpg","./assets/images/compressed/sp luxe cond.jpg","./assets/images/compressed/sb dark oil.jpg"]'
+                        data-price='["Rs.2050/-","Rs.2600/-","Rs.2900/-" ,"Rs.3500/-","Rs.3150/-","Rs.2250/-","Rs.2500/-","Rs.3100/-"]'
+                        data-name='["SP Color Save Shampoo","SP Color Save Conditioner", "SP Color Save Mask" ,"SP Keratin Luxe Elixir", "SP Luxe Mask","SP Luxe Shampoo", "SP Luxe Conditioner","SB Dark Oil"]'
+                        data-use='["Colored Hair","Colored Hair","Colored Hair","Colored Hair","Colored Hair","Colored Hair","Colored Hair"]'
+                        > 
+                        Colored Hair
+                    </label>
+                </div>
+                    <h3 class="scalp-opts">SCALP</h3>
+                    <div class="options scalp-opts">
+                        <label>
+                            <!-- <input type="checkbox" name="What do you dislike (Concern) about your scalp" id="" value="Sensitive (Dryness/ Weakness / Rashes)" class="scalpCa" data-prod="SP BALANCE " data-img="./assets/images/compressed/sp balance elix.jpg" >  -->
+                            <input type="checkbox" name="What do you dislike (Concern) about your scalp" id="sensitive" value="Sensitive (Dryness/ Weakness / Rashes)" class="scalpCa" 
+                            data-prod="SP BALANCE " 
+                            data-img='["./assets/images/compressed/sp balance shampoo.jpg","./assets/images/compressed/sp balance lotion.jpg","./assets/images/compressed/sp balance mask.jpg"]' 
+                            data-price='["Rs.2250/-","Rs.2400/-","Rs.2900/- "]'
+                        data-name='["SP Balance Shampoo","SP Balance Scalp Lotion","SP Balance Mask"]'
+                        data-use='["Sensitive Scalp","Sensitive Scalp","Sensitive Scalp","Sensitive Scalp"]'
+                        >  
+                            Sensitive (Dryness/ Weakness / Rashes)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="What do you dislike (Concern) about your scalp" id="hairfall" value="Hair Fall" class="scalpCa" 
+                            data-prod="SP BALANCE " 
+                            data-img='["./assets/images/compressed/sp balance elix.jpg","./assets/images/compressed/sp balance shampoo.jpg","./assets/images/compressed/sp balance lotion.jpg","./assets/images/compressed/sp balance mask.jpg"]'
+                            data-price='["Rs.5650/-","Rs.2250/-","Rs.2400/-","Rs.2900/-"]'
+                        data-name='["SP Balance Energy Serum","SP Balance Shampoo","SP Balance Scalp Lotion","SP Balance Mask"]'
+                        data-use='["Hair Fall","Hair Fall","Hair Fall","Hair Fall"]'
+                        > 
+                            Hair Fall
+                        </label>
+                        <label>
+                            <input type="checkbox" name="What do you dislike (Concern) about your scalp" id="oily" value="Oily" class="scalpCa" 
+                            data-prod="SP PURIFY " 
+                            data-img='["./assets/images/compressed/sp purify lotion.jpg","./assets/images/compressed/sp purify mask.jpg","./assets/images/compressed/sp purify peel.jpg","./assets/images/compressed/sp purify shampoo.jpg"]'
+                            data-price='["Rs.2400/-","Rs.2900/-","Rs.2000/-","Rs.2250/-"]'
+                        data-name='["SP Purify Lotion", "SP Purify Mask","SP Purify Shampeeling","SP Purify Shampoo"]'
+                        data-use='["Oily Scalp","Oily Scalp","Oily Scalp","Oily Scalp"]'
+                        > 
+                            Oily
+                        </label>
+                        <label>
+                            <input type="checkbox" name="What do you dislike (Concern) about your scalp" id="dandruff" value="Dandruff" class="scalpCa" 
+                            data-prod="SP PURIFY " 
+                            data-img='["./assets/images/compressed/sp purify lotion.jpg","./assets/images/compressed/sp purify mask.jpg","./assets/images/compressed/sp purify peel.jpg","./assets/images/compressed/sp purify shampoo.jpg"]'
+                            data-price='["Rs.2400/-","Rs.2900/-","Rs.2000/-","Rs.2250/-"]'
+                        data-name='["SP Purify Lotion", "SP Purify Mask","SP Purify Shampeeling","SP Purify Shampoo"]'
+                        data-use='["Dandruff","Dandruff","Dandruff","Dandruff"]'
+                        > 
+                            Dandruff
+                        </label>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="result">
+            <!-- <h2>Report</h2> -->
+            
+            <div class="service">
+                <h2>Service Recommendation: <h3 class="hairRec"></h3></h2>
+                <img src="" alt="" class="servImg">
+                <span class="servPrice"></span>
+                <!-- <span >Scalp Reccomendation: <h3 class="scalpRec"></h3></span> -->
+            </div>
+            <div class="products hide">
+                <h2>Product Recommendation </h2>
+                <!-- <span><h3 class="hairProd"></h3></span> -->
+                <div class="img-holder hair">
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                      <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                      <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                      <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                      <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                      <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                      <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                      <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                      <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                      <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+
+                    
+                    
+                </div>
+              
+
+<span class="prodprice"><sup>#</sup>All product prices are inclusive of taxes </span>
+            </div>
+            <div class="products-dry dryness plex hide">
+                <h2>Dry Hair</h2>
+                <div class="img-holder">
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                </div>
+                <span class="prodprice"><sup>#</sup>All product prices are inclusive of taxes </span>
+            </div>
+            <div class="products-coloured plex colored hide">
+                <h2>Coloured Hair</h2>
+                <div class="img-holder">
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                </div>
+                <span class="prodprice"><sup>#</sup>All product prices are inclusive of taxes </span>
+            </div>
+            <div class="products-limp plex limp hide">
+                <h2>Limp/Fine Hair</h2>
+                <div class="img-holder">
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                </div>
+                <span class="prodprice"><sup>#</sup>All product prices are inclusive of taxes </span>
+            </div>
+            <div class="products-dull plex dull hide">
+                <h2>Dull Hair</h2>
+                <div class="img-holder">
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                </div>
+                <span class="prodprice"><sup>#</sup>All product prices are inclusive of taxes </span>
+            </div>
+            <div class="products-frizzy plex frizzy hide">
+                <h2>Frizzy Hair</h2>
+                <div class="img-holder">
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                </div>
+                <span class="prodprice"><sup>#</sup>All product prices are inclusive of taxes </span>
+            </div>
+
+            <div class="products-damage plex damage hide">
+                <h2>Damaged Hair</h2>
+                <div class="img-holder">
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                </div>
+                <span class="prodprice"><sup>#</sup>All product prices are inclusive of taxes </span>
+            </div>
+            <div class="products-sensitive plex sensitive hide">
+                <h2>Sensitive Scalp</h2>
+                <div class="img-holder">
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                </div>
+                <span class="prodprice"><sup>#</sup>All product prices are inclusive of taxes </span>
+            </div>
+            <div class="products-hairfall plex hairfall hide">
+                <h2>Hair Fall</h2>
+                <div class="img-holder">
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                </div>
+                <span class="prodprice"><sup>#</sup>All product prices are inclusive of taxes </span>
+            </div>
+            <div class="products-dandruff plex dandruff hide">
+                <h2>Dandruff</h2>
+                <div class="img-holder">
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                </div>
+                <span class="prodprice"><sup>#</sup>All product prices are inclusive of taxes </span>
+            </div>
+            <div class="prodcuts-oily oily plex hide">
+                <h2>Oily Scalp</h2>
+                <div class="img-holder">
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                    <div class="prod-holder">
+                        <img src="" alt="">
+                        <h3 class="prod-name"></h3>
+                        <p class="prod-price"></p>
+                        <p class="prodUse"></p>
+                    </div>
+                </div>
+                <span class="prodprice"><sup>#</sup>All product prices are inclusive of taxes </span>
+            </div>
+            
+            
+                            <button class="done">Home</button>
+        </div>
+        <button class="report hide">Submit</button>
+       
+    </div>
+    <form 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbximkdUy3xqW9DweOx_3uuiRQS2loCvMK4OLq8cw_R3oAEwBliHF1a5Z2xrDoCr3Gog/exec"
+>
+<input type="text" name="Branch" id="branch">
+<input name="Contact Number" type="tel" placeholder="phone number" id="contactNumber">
+<input name="Client's Name" type="text" placeholder="Name" id="clientname">
+<input name="Stylist's Name" type="text" placeholder="Name" id="stylistSname">
+  <input type="text" name="Gender" id="gender">
+  <input type="text" name="ECM Scan Hair Result" id="ecm-hair">
+  <input type="text" name="ECM Scan Scalp Result" id="ecm-scalp">
+  <input type="text" name="Semi Permanent Smoothening" id="semi-perm">
+  <input type="text" name="Concern" id="concern">
+  <input type="text" name="Hair Like" id="hairLike">
+  <input type="text" name="Scalp Like" id="scalpLike">
+  <input type="text" name="Hair Dislike" id="hairDislike">
+  <input type="text" name="Scalp Dislike" id="scalpDislike">
+  <input type="text" name="Homecare Products" id="homeProds">
+  <input type="text" name="Heatstyle" id="heatStyle">
+  <input type="text" name="Heatstyle Frequency" id="heatStyleFreq">
+  <input type="text" name="Chemical Treatments" id="chemTreat">
+  <input type="text" name="Chemical Treatments Names" id="chemTreatName">
+  <input type="text" name="First Hair Spa" id="firstSpa">
+  <input type="text" name="Last Hair Wash" id="lastWash">
+  <input type="text" name="Hair Wash Frequency" id="washFreq">
+  <input type="text" name="Purchase" id="purchase">
+
+  
+  <button type="submit" id="send">Send</button>
+</form>
+    <!-- <div class="prev hide"> <i class="arrow left"></i> </div>
+    <div class="next"> <i class="arrow right"></i> </div> -->
+    <script src="./script2.js"></script>
+</body>
+</html>
